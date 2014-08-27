@@ -1,0 +1,89 @@
+
+body {
+    background-color: #C0DEED;
+}
+
+#centerdiv {
+    background-color: #A8D0E3;
+    width: 60%;
+    height:60%;
+    border-radius: 20px;
+    padding: 3%;
+    position: absolute;
+    top:20%;
+    left:20%;
+}
+
+#delta_logo {
+    position:absolute;
+    right:5%;
+    bottom:5%;
+    width:5%;
+    height: 13%;
+}
+
+#comp_logo {
+    position: absolute;
+    top: 5%;
+    left: 3%;
+    width:6%;
+    height:10%;
+}
+
+#name {
+    background-color: #8EC1DA;
+    width:auto;
+    height:auto;
+    border-radius: 5px;
+    padding:5px;
+    font-size: 21px;
+    color: #0084B4;
+    float: left;
+
+}
+
+#id {
+    width:auto;
+    height:auto;
+    border-radius: 5px;
+    padding:5px;
+    font-size: 17px;
+    color: #0084B4;
+    float: left;
+}
+
+#user {
+    width:auto;
+    height:auto;
+    border-radius: 5px;
+    padding:5px;
+    font-size: 21px;
+    color: #0084B4;
+    position:absolute;
+    top:20%;
+    left:10%;
+}
+
+#data {
+    background-color: #C5E3F2;
+    width:auto;
+    width:80%;
+    height: auto;
+    border-radius: 5px;
+    font-size: 17px;
+
+    padding: 15px;
+
+
+    position: absolute;
+    top:40%;
+    left:10%;
+    right:auto;
+}
+
+#prop {
+    color: #0048B4;
+    position:absolute;
+    bottom:30%;
+    right: 10%;
+}
