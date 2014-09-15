@@ -9,8 +9,8 @@ $hash = "festember";
 $cnt = "20";
 
 // Instagram Credentials
-$clientid = "Your-Client-ID";  //Your CLient ID
-$accesstoken = "Your-Access-Token";    //Your Access Token
+$clientid = "a8c9e2f93df247a383dc437b878007d3";  //Your CLient ID
+$accesstoken = "1438778081.a8c9e2f.b32a8785ad8e4e2199f8a647630402f5";    //Your Access Token
 
 //Base API Request
 $req = 'https://api.instagram.com/v1/tags/'.$hash.'/media/recent?callback=?&count='.$cnt.'&access_token='.$accesstoken;

@@ -6,11 +6,11 @@ body {
 #centerdiv {
     background-color: #A8D0E3;
     width: 60%;
-    height:60%;
+    height:70%;
     border-radius: 20px;
     padding: 3%;
     position: absolute;
-    top:20%;
+    top:15%;
     left:20%;
 }
 
@@ -66,10 +66,10 @@ body {
 
 #data {
     background-color: #C5E3F2;
-    width:auto;
     width:80%;
+    max-width:80%;
     height: auto;
-    border-radius: 5px;
+    border-radius: 8px;
     font-size: 17px;
 
     padding: 15px;
@@ -83,7 +83,49 @@ body {
 
 #prop {
     color: #0048B4;
-    position:absolute;
-    bottom:30%;
-    right: 10%;
+    position: absolute;
+    bottom:20%;
+    right:10%;
+    width:30%;
+    height: 14px;
+    font-size: 14px;
+
+}
+
+#openq {
+    height: 5%;
+    width: 5%;
+    float:left;
+}
+
+#closeq {
+    height: 5%;
+    width: 5%;
+    float: right;
+}
+
+#tweet-text {
+    text-align: justify;
+    width: 90%;
+    position: relative;
+    left: 5%;
+    right: 5%;
+}
+
+#fav {
+    position:relative;
+    float:left;
+}
+
+#ret {
+    position: relative;
+    float:right;
+}
+
+#ret_cnt {
+    float: right;
+}
+
+#fav_cnt {
+    float: right;
 }

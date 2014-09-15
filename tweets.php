@@ -5,17 +5,17 @@ require('./TwitterAPIExchange.php');
 // Twitter API Credentials
 
 $settings = array(
-    'oauth_access_token' => "Your-Oauth-Access-Token",
-    'oauth_access_token_secret' => "Your-Oauth-Access-Token-Secret",
-    'consumer_key' => "Your-Consumer-Key",
-    'consumer_secret' => "Your-Consumer-Key-Secret"
+    'oauth_access_token' => "2734041536-pK8ZFuHOisxlu1vTjABzP1XbjtlCG2V0EOuqCAG",
+    'oauth_access_token_secret' => "OuKTD4RvbLZ43xG7st8FTtgDo5T0suHTIw5WmrZk5WNdX",
+    'consumer_key' => "nx04xuGMIFnvlq3mGuTcS1JFw",
+    'consumer_secret' => "XLrtAsVdJZxmDJvBOJcA6kjAE0nX35WGLBRT7z6sivUUdmmGKv"
 );
 
 
 // Database credentials
-$username = "mysql-Username";
-$password = "mysql-Password";
-$host = "Servername";
+$username = "root";
+$password = "stein238";
+$host = "localhost";
 
 // Connecting to the database
 $db = mysql_connect($host,$username,$password)
