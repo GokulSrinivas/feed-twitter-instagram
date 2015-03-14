@@ -1,16 +1,18 @@
 
 body {
     background-color: #C0DEED;
+/*    background-color: #FBAB5B;*/
+/*    color:white;*/
 }
 
 #centerdiv {
-    background-color: #A8D0E3;
+    background-color: #C0DEED;
     width: 60%;
-    height:70%;
+    height:80%;
     border-radius: 20px;
     padding: 3%;
     position: absolute;
-    top:15%;
+    top:10%;
     left:20%;
 }
 
@@ -26,18 +28,20 @@ body {
     position: absolute;
     top: 5%;
     left: 3%;
-    width:6%;
+    width:10%;
     height:10%;
 }
 
 #name {
     background-color: #8EC1DA;
+/*    background-color: #FBAB5B;*/
     width:auto;
     height:auto;
     border-radius: 5px;
     padding:5px;
-    font-size: 21px;
+    font-size: 23px;
     color: #0084B4;
+/*    color:white;*/
     float: left;
 
 }
@@ -47,8 +51,9 @@ body {
     height:auto;
     border-radius: 5px;
     padding:5px;
-    font-size: 17px;
+    font-size: 19px;
     color: #0084B4;
+/*    color:white;*/
     float: left;
 }
 
@@ -66,6 +71,7 @@ body {
 
 #data {
     background-color: #C5E3F2;
+/*    background-color: #FBAB5B;*/
     width:80%;
     max-width:80%;
     height: auto;
@@ -93,14 +99,18 @@ body {
 }
 
 #openq {
-    height: 5%;
-    width: 5%;
+    position:absolute;
+    top:0;
+    height: 25%;
+    width: 8%;
     float:left;
 }
 
 #closeq {
-    height: 5%;
-    width: 5%;
+    position:absolute;
+    height: 25%;
+    width: 8%;
+    bottom:0;
     float: right;
 }
 
@@ -110,16 +120,21 @@ body {
     position: relative;
     left: 5%;
     right: 5%;
+    height: auto;
+    font-size: 20px;
+    color: #0084B4;
 }
 
 #fav {
     position:relative;
     float:left;
+    display: none;
 }
 
 #ret {
     position: relative;
     float:right;
+    display: none;
 }
 
 #ret_cnt {
@@ -128,4 +143,12 @@ body {
 
 #fav_cnt {
     float: right;
+}
+
+#fest_logo {
+        position:absolute;
+    left:5%;
+    bottom:5%;
+    width:5%;
+    height: 13%;
 }

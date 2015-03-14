@@ -10,24 +10,26 @@
         <script type="text/javascript" src="script.js"></script>
 
         <link rel="stylesheet" href="includes/bootstrap-3.2.0-dist/css/bootstrap.css">
+        <link rel="stylesheet" href="includes/font-awesome-4.2.0/css/font-awesome.css">
         <link rel="stylesheet" href="feedstyle.css">
     </head>
-    <body>
+    <body onload="">
 <!-- The twitter body starts here        -->
         <div id="centerdiv">
-            <img id="comp_logo" src="imgs/twitter.png">
+            <img id="comp_logo" src="imgs/twitter-icon.svg">
 
-            <div id="user">
+            <div id="user" class="fa">
                 <div id="name">Gokul Srinivas</div>
                 <div id="id">@GokulSrinivas23</div>
             </div>
             <div id="data">
                 <img id="openq" src="imgs/openq.png">
                 <br>
-                <div id="tweet-text">
+                <div id="tweet-text" class="fa">
                 Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer posuere erat a ante ante.
                 Lorem ipsum dolor sit amet, consectetur.
                 </div>
+                
                 <img id="closeq" src="imgs/closeq.png">
             </div>
             <div id="prop">
@@ -36,19 +38,21 @@
             </div>
         </div>
         <img id="delta_logo" src="imgs/delta.png">
+        <img id="fest_logo" src="imgs/logo.svg">
 <!--The Twitter body ends here        -->
 <!--The Javascript to change the tweets starts here    -->
     <script type="text/javascript">
 
-    var tweet_text = [];
-    var tweet_fav  = [];            //The arrays for data;
-    var tweet_ret  = [];
-    var tweet_name = [];
-    var tweet_id   = [];
-</script>
 
+</script>
+<!--<script id="mydiv"></script>-->
 <?php
     // Database credentials
+
+/*
+function addtweets()
+{
+    
     $username = "root";
     $password = "stein238";
     $host = "localhost";
@@ -64,6 +68,12 @@
     $result = mysql_query($query);
 
     $row_cnt = mysql_num_rows($result);
+    
+    if($row_cnt>=10)
+    {
+        $row_cnt = 10;
+            }
+
 
     for($i=0;$i<$row_cnt;$i++)
     {
@@ -96,13 +106,18 @@
         echo($tweet_name);
         echo($tweet_id);
     */
-    }
+/*    }
 
     echo("<script>");
     echo("setTimeout(function(){");
     echo("change_tweets(tweet_text,tweet_fav,tweet_ret,tweet_name,tweet_id,0);");
-    echo("},1000);");
+    echo("},5000);");
     echo("</script>  ");
+
+
+}
+    addtweets();
+*/
 ?>
     </body>
 </html>

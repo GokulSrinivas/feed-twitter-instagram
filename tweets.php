@@ -5,23 +5,23 @@ require('./TwitterAPIExchange.php');
 // Twitter API Credentials
 
 $settings = array(
-    'oauth_access_token' => "2734041536-pK8ZFuHOisxlu1vTjABzP1XbjtlCG2V0EOuqCAG",
-    'oauth_access_token_secret' => "OuKTD4RvbLZ43xG7st8FTtgDo5T0suHTIw5WmrZk5WNdX",
-    'consumer_key' => "nx04xuGMIFnvlq3mGuTcS1JFw",
-    'consumer_secret' => "XLrtAsVdJZxmDJvBOJcA6kjAE0nX35WGLBRT7z6sivUUdmmGKv"
+    'oauth_access_token' => "",
+    'oauth_access_token_secret' => "",
+    'consumer_key' => "",
+    'consumer_secret' => ""
 );
 
 
 // Database credentials
-$username = "root";
-$password = "stein238";
-$host = "localhost";
+$username = "";
+$password = "";
+$host = "";
 
 // Connecting to the database
 $db = mysql_connect($host,$username,$password)
         or die("Database Connection Failed");
 
-$tab = mysql_select_db("feed",$db)
+$tab = mysql_select_db("festember_feed",$db)
         or die("Unexpected Problem. Please try again.");
 
 // Receiving tweets and adding to the database
@@ -86,7 +86,7 @@ foreach($sdecode['statuses'] as $tweet)
             $name = mysql_result($result, $i, "name");
             $id = mysql_result($result, $i, "id");
 
-            $query = "delete from tweets where text='$text' and id='$id'" ;
+            $query = "DELETE from tweets where text='$text' and id='$id'" ;
             $result = mysql_query($query);
 
             $query = "INSERT INTO tweets VALUES ('$tweet_text','$tweet_fav','$tweet_ret','$tweet_name','$tweet_username')";
